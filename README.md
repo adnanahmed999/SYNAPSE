@@ -1,5 +1,5 @@
 # Readme for Task 1
-As the statement says, we want to clean data
+As the statement says, we want to clean data.
 The python file cleans the data as per the requirement of user (to find people who may fund him)
 i.e Category should be either sports or environment,
 Event type being Funding, minimum funding should be $20.
