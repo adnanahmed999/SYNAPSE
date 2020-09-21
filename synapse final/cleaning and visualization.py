@@ -94,4 +94,18 @@ plt.pie(active_states_count,labels=active_states_list,colors=["bisque","deepskyb
 plt.title("Top 7 funding states")
 plt.tight_layout()
 
+plt.figure(5)
+
+age_dataframe= df["age"].value_counts()
+print(age_dataframe)
+age_group = age_dataframe.index.values
+print(age_group)
+age_group_count = age_dataframe.to_list()
+print(age_group_count)
+
+plt.scatter(age_group,age_group_count,s=50,c="black",edgecolors="white",linewidths=2,alpha=0.75)
+plt.title("Activity according to Age")
+plt.xlabel("Age Group")
+plt.ylabel("Participation")
+
 plt.show()
